@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n;
+    cin>>n;
+    cout<<"Factors of "<<n<<" are : ";
+    vector<int> factors;
+    for(int i = 1;i<=n;i++){
+        if((n%i)==0){
+            cout<<i<<" ";
+        }
+    }
+    return 0;
+}
