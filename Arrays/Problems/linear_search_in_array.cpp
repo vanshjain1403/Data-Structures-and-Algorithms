@@ -17,9 +17,13 @@ int main() {
     for(int i = 0;i<n;i++){
         if(arr[i]==element){
             exists=1;
+            break;
         }
     }
-    if(exists==1) cout<<"Exists!"<<endl;
+    if(exists){
+        cout<<"Exists!"<<endl;
+        
+    } 
     else cout<<"Doesn't exist!"<<endl;
    
     delete []arr;
