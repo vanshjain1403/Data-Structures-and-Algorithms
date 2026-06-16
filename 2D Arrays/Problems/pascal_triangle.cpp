@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int numRows = 6;
+    vector<vector<int>> ans(numRows,vector<int>(numRows,1));
+        for(int i = 0;i<numRows;i++){
+            for(int j = 0;j<=i;j++){
+                if(j==0||i==j){
+                    continue;
+                }
+                else{
+                    ans[i][j] = ans[i-1][j-1] + ans[i-1][j];
+                }
+            }
+        }
+        for(int i = 0;i<numRows;i++){
+            for(int j = 0;j<=i;j++){
+                cout<<ans[i][j]<<" ";
+            }
+            cout<<endl;
+            
+        }
+    return 0;
+}
