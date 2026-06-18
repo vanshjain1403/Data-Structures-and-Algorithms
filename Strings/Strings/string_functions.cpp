@@ -7,6 +7,9 @@ int main() {
     cout<<s.at(4)<<endl;
     cout<<s.length()<<endl;
     cout<<s.size()<<endl;
-    cout<<s.rfind('M')<<endl;
+    cout<<s.rfind('v')<<endl;
+    s=s+" Jai Bolo Jai "+to_string(1008);
+    
+    cout<<s<<endl;
     return 0;
 }
