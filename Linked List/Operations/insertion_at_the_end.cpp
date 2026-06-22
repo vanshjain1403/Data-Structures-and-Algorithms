@@ -10,6 +10,10 @@ class Node{
     }
 };
 void insertion_at_end(Node* head,int val){
+    if(head == nullptr) { 
+        head = new Node(val); 
+        return; 
+    }
     Node* temp = head;
     while(temp->next!=nullptr){
         temp = temp->next;
