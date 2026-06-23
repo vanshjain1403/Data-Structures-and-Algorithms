@@ -112,6 +112,7 @@ int main() {
 
     Node* head = a;
     
+    
 
     
     traverse(head);
