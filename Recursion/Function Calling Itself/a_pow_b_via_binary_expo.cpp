@@ -12,6 +12,6 @@ int main() {
      cin>>a;  
      int b;  
      cin>>b;  
-     cout<<pow(a,b);  
+     cout<<pow(a,b);
      return 0;
 }
